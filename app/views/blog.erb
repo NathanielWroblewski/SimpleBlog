@@ -1,0 +1,16 @@
+<div class="container">
+
+<ul>
+  <li><a href="/all_blogs">All Blogs</a></li>
+  <li><a href="/post">Add Post</a></li>
+  <li><a href="/logout">Logout</a></li>
+</ul>
+
+<h1><%= @user.blog_title %></h1>
+
+<% @posts.each do |post| %>
+<h4><%= post.title %></h4>
+<p><%= post.body %></p>
+<% end %>
+
+</div>
